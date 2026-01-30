@@ -36,6 +36,54 @@ URL generated:Processing Image 8: https://corporate.dow.com/en-us/purpose-in-act
 After fetching the data, normalised the baseline to 2020 and performed trend analysis.
 Result: → Process emissions are declining.
 → Process efficiency lags behind Dow sustainability claim
+
+Week 4: Final Project:
+Dataset used:https://github.com/openclimatedata/edgar-co2-emissions
+
+Task 1: Predict future emissions or emission intensity from historical operational dataset A
+•	Clean dataset and engineer features.
+•	Split data (train/test or time-based split).
+•	Train at least two ML models:
+a)	Linear Regression / Ridge
+b)	Random Forest or XGBoost
+
+•	Evaluate models:
+a) RMSE
+b) MAE
+c) R²
+
+•	Extract feature importance:
+a)	Random Forest importance or
+b)	SHAP values
+
+
+Output
+•	Table of model metrics
+•	Plot: Actual vs Predicted Emissions
+•	Feature importance plot
+
+## Task 2 and 3 already done as Week 3 assignment (Company selected:  Reliance → https://www.ril.com and  Dow → https://corporate.dow.com/en-us/science-and-sustainability both
+Task 2: Automatically extract emission-related commitments from any sustainability report
+a)	Extract text from PDF using pdfplumber or PyMuPDF.
+b)	Clean text (lowercase, remove stopwords, punctuation).
+c)	Identify emission-related sentences using:
+•	Keyword rules (CO₂, emission, net-zero, Scope 1/2/3)
+•	TF-IDF scoring
+d)	Extract commitment statements
+
+
+Task 3: Check whether ML-predicted emission trends support or contradict stated goals.
+a)	From ML predictions: Estimate emission trend slope (% change per year)
+b)	From NLP: Extract stated reduction target (% by year)
+c)	Compare: 
+•	Predicted reduction vs stated reduction
+•	Identify alignment gap
+## Result: After fetching the data, normalised the baseline to 2020 and performed trend analysis.
+Result: → Process emissions are declining.
+→ Process efficiency lags behind Dow sustainability claim
+
+
+
     
  
 
